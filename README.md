@@ -19,8 +19,6 @@ def talk(text):
 def take_command():
     try:
         with sr.Microphone() as source:
-            # r.energy_threshold = 10000
-            # r.adjust_for_ambient_noise(source, 2.5)
             print('listening...')
 
             voice = listener.listen(source)
